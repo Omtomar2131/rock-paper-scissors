@@ -1,0 +1,92 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Header Styling */
+h1 {
+    background: linear-gradient(90deg, rgb(4, 37, 37), rgb(18, 110, 110));
+    color: rgb(255, 255, 255);
+    height: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Choice Styling */
+.choice:hover {
+    cursor: pointer;
+    background-color: rgb(4, 37, 37);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+/* Flex Container for Choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+/* Individual Choice Styling */
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Scoreboard Styling */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.score {
+    padding: 5px;
+    margin: 20px; /* Adds space around the .score element */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #eef1f4;
+}
+
+
+#player-score, #computer-score {
+    font-size: 4rem;
+    padding: 50px;
+}
+
+/* Message Container */
+#msg {
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding Gradient Background to Body */
+body {
+    background: linear-gradient(135deg, rgba(240, 240, 240, 1), rgba(220, 220, 220, 1));
+}
